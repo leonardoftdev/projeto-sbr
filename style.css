@@ -21,7 +21,7 @@
 }
 
 body {
-    
+    background-color: lightcoral;
     font-family: 'outfit', sans-serif;
     position: relative;
 }
@@ -76,11 +76,12 @@ main section {
 }
 
 main section > h1 {
-    color: var(--color01);
+    color: var(--color02);
     font-family: 'caprasimo', sans-serif;
     font-weight: normal;
     text-align: center;
     font-size: 10vw;
+    text-shadow: 1px 1px 1px black;
 }
 
 main section > div {
