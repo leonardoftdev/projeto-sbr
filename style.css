@@ -21,6 +21,7 @@
 }
 
 body {
+    
     font-family: 'outfit', sans-serif;
     position: relative;
 }
@@ -68,6 +69,9 @@ header div > nav > a {
 
 
 main section {
+    min-width: 300px;
+    max-width: 1000px;
+    margin: 0 auto;
     padding: 10px 80px;
 }
 
@@ -76,7 +80,7 @@ main section > h1 {
     font-family: 'caprasimo', sans-serif;
     font-weight: normal;
     text-align: center;
-    font-size: 6em;
+    font-size: 10vw;
 }
 
 main section > div {
@@ -84,4 +88,5 @@ main section > div {
     height: 550px;
     margin-top: 30px;
     border-radius: 20px;
+
 }
