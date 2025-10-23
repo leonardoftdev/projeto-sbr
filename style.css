@@ -1,0 +1,87 @@
+@charset "UTF-8";
+
+:root {
+    --color01: #94004a;
+    --color02: #009494;
+}
+
+@font-face {
+    font-family: 'caprasimo';
+    src: url(fonts/Caprasimo/Caprasimo-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'outfit';
+    src: url(fonts/Outfit/Outfit-VariableFont_wght.ttf) format('truetype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'outfit', sans-serif;
+    position: relative;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+header {
+    background-color: white;
+    padding: 20px 50px 0px 50px;
+    position: sticky;
+    top: 0;
+}
+
+header div > h1 {
+    color: var(--color01);
+    font-family: 'caprasimo', serif;
+    font-weight: normal;
+}
+
+header div > h1 > a {
+    text-decoration: none;
+    color: var(--color01);
+}
+
+.reg {
+    font-size: 0.6em;
+    vertical-align: super;
+}
+
+header div > nav {
+    margin-left: auto;
+}
+
+header div > nav > a {
+    text-decoration: none;
+    font-weight: 600;
+    color: black;
+    padding: 0px 10px;
+}
+
+
+main section {
+    padding: 10px 80px;
+}
+
+main section > h1 {
+    color: var(--color01);
+    font-family: 'caprasimo', sans-serif;
+    font-weight: normal;
+    text-align: center;
+    font-size: 6em;
+}
+
+main section > div {
+    background-color: rgb(41, 41, 41);
+    height: 550px;
+    margin-top: 30px;
+    border-radius: 20px;
+}
