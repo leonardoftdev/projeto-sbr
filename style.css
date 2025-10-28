@@ -1,8 +1,8 @@
 @charset "UTF-8";
 
 :root {
-    --color02: rgb(253, 184, 184);
-    --color01: lightcoral;
+    --color01: #fdb8b8;
+    --color02: lightcoral;
     --color03: #009494;
 }
 
@@ -35,7 +35,7 @@ body {
 }
 
 header {
-    background-color: var(--color02);
+    background-color: var(--color01);
     padding: 20px 50px 5px 50px;
     position: sticky;
     top: 0;
