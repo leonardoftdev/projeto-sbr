@@ -1,8 +1,9 @@
 @charset "UTF-8";
 
 :root {
-    --color01: #94004a;
-    --color02: #009494;
+    --color02: rgb(253, 184, 184);
+    --color01: lightcoral;
+    --color03: #009494;
 }
 
 @font-face {
@@ -34,21 +35,24 @@ body {
 }
 
 header {
-    background-color: white;
-    padding: 20px 50px 0px 50px;
+    background-color: var(--color02);
+    padding: 20px 50px 5px 50px;
     position: sticky;
     top: 0;
+    box-shadow: 1px 1px 10px black;
 }
 
 header div > h1 {
-    color: var(--color01);
+    color: var(--color03);
     font-family: 'caprasimo', serif;
     font-weight: normal;
+    text-shadow: 1px 1px 1px black;
 }
 
 header div > h1 > a {
     text-decoration: none;
-    color: var(--color01);
+    color: var(--color03);
+    text-shadow: 1px 1px 1px black;
 }
 
 .reg {
@@ -76,7 +80,7 @@ main section {
 }
 
 main section > h1 {
-    color: var(--color02);
+    color: var(--color03);
     font-family: 'caprasimo', sans-serif;
     font-weight: normal;
     text-align: center;
