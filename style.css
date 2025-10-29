@@ -95,3 +95,29 @@ main section > div {
     border-radius: 20px;
 
 }
+
+main section.parte-2 {
+    padding: 50px 0px ;
+    text-align: center;
+    font-size: 3vw;
+}
+
+main section.parte-2 > p {
+    font-weight: bold;
+    color: #252525;
+    padding: 20px;
+}
+
+main section.parte-2 > h2 {
+    
+    padding-bottom: 40px;
+}
+
+main section.parte-2 > a {
+    text-decoration: none;
+    font-weight: 600;
+    color: black;
+    background-color: var(--color01);
+    border-radius: 6px;
+    padding: 10px 20px;
+}
