@@ -2,8 +2,12 @@
 
 :root {
     --color01: #fdb8b8;
-    --color02: lightcoral;
+    --color02: #f08080;
     --color03: #009494;
+
+    --bgcolor: #f08080;
+    --headercolor: #fdb8b8;
+    --titlecolor: #009494;
 }
 
 @font-face {
@@ -14,15 +18,17 @@
 @font-face {
     font-family: 'outfit';
     src: url(fonts/Outfit/Outfit-VariableFont_wght.ttf) format('truetype');
+    font-display: swap;
 }
 
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-    background-color: lightcoral;
+    background-color: var(--bgcolor);
     font-family: 'outfit', sans-serif;
     position: relative;
 }
@@ -35,23 +41,32 @@ body {
 }
 
 header {
-    background-color: var(--color01);
+    background-color: var(--headercolor);
     padding: 20px 50px 5px 50px;
     position: sticky;
     top: 0;
-    box-shadow: 1px 1px 10px black;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.719);
+    z-index: 1000;
 }
 
 header div > h1 {
-    color: var(--color03);
+    color: var(--titlecolor);
     font-family: 'caprasimo', serif;
     font-weight: normal;
     text-shadow: 1px 1px 1px black;
 }
 
+.abreviado {
+    display: none;
+}
+
+#abr {
+    display: none;
+}
+
 header div > h1 > a {
     text-decoration: none;
-    color: var(--color03);
+    color: var(--titlecolor);
     text-shadow: 1px 1px 1px black;
 }
 
@@ -71,9 +86,13 @@ header div > nav > a {
     padding: 0px 10px;
 }
 
+header div > nav > a:hover {
+    text-decoration: underline;
+    color: var(--color03);
+}
 
 main section {
-    min-width: 300px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 10px 80px;
 }
@@ -88,7 +107,7 @@ main section > h1 {
 }
 
 main section > div {
-    background-color: rgb(41, 41, 41);
+    background-color: black;
     margin: 30px auto;
     border-radius: 20px;
     width: 90%;
@@ -98,9 +117,10 @@ main section > div {
 }
 
 main section.parte-2 {
-    padding: 50px 0px ;
+    padding: 80px 20px ;
     text-align: center;
     font-size: 3vw;
+    line-height: 1.6;
 }
 
 main section.parte-2 > p {
@@ -125,4 +145,45 @@ main section.parte-2 > a {
     background-color: var(--color01);
     border-radius: 6px;
     padding: 10px 20px;
+}
+
+main section.parte-2 > a:hover {
+    transition: 0.5s;
+    background-color: var(--color03);
+    color: white;
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 15px 20px;
+    flex-direction: column;
+  }
+
+  .titulo-completo {
+    display: none;
+  }
+
+  .reg {
+    display: none;
+  }
+
+  .abreviado {
+    display: inline;
+  }
+
+  #abr {
+    display: inline;
+  }
+
+  nav {
+    margin-top: 10px;
+  }
+  main section > h1 {
+    font-size: 11vw;
+  }
+
+  main section.parte-2 {
+    font-size: 5vw;
+    padding: 40px 10px;
+  }
 }
