@@ -74,7 +74,6 @@ header div > nav > a {
 
 main section {
     min-width: 300px;
-    max-width: 1000px;
     margin: 0 auto;
     padding: 10px 80px;
 }
@@ -90,10 +89,12 @@ main section > h1 {
 
 main section > div {
     background-color: rgb(41, 41, 41);
-    height: 550px;
-    margin-top: 30px;
+    margin: 30px auto;
     border-radius: 20px;
-
+    width: 90%;
+    max-height: 500px;
+    aspect-ratio: 1/1;
+    overflow: hidden;
 }
 
 main section.parte-2 {
@@ -105,12 +106,16 @@ main section.parte-2 {
 main section.parte-2 > p {
     font-weight: bold;
     color: #252525;
-    padding: 20px;
+    padding-bottom: 50px;
 }
 
 main section.parte-2 > h2 {
-    
-    padding-bottom: 40px;
+    padding-bottom: 60px;
+}
+
+main section.parte-2 > h2 > .marca {
+    font-weight: normal;
+    font-family: 'caprasimo', sans-serif;
 }
 
 main section.parte-2 > a {
