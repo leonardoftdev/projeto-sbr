@@ -1,10 +1,6 @@
 @charset "UTF-8";
 
 :root {
-    --color01: #fdb8b8;
-    --color02: #f08080;
-    --color03: #009494;
-
     --bgcolor: #f08080;
     --headercolor: #fdb8b8;
     --titlecolor: #009494;
@@ -12,12 +8,12 @@
 
 @font-face {
     font-family: 'caprasimo';
-    src: url(fonts/Caprasimo/Caprasimo-Regular.ttf) format('truetype');
+    src: url(../fonts/Caprasimo/Caprasimo-Regular.ttf) format('truetype');
 }
 
 @font-face {
     font-family: 'outfit';
-    src: url(fonts/Outfit/Outfit-VariableFont_wght.ttf) format('truetype');
+    src: url(../fonts/Outfit/Outfit-VariableFont_wght.ttf) format('truetype');
     font-display: swap;
 }
 
@@ -53,16 +49,10 @@ header div > h1 {
     color: var(--titlecolor);
     font-family: 'caprasimo', serif;
     font-weight: normal;
+    font-size: 2.3em;
     text-shadow: 1px 1px 1px black;
 }
 
-.abreviado {
-    display: none;
-}
-
-#abr {
-    display: none;
-}
 
 header div > h1 > a {
     text-decoration: none;
@@ -88,7 +78,7 @@ header div > nav > a {
 
 header div > nav > a:hover {
     text-decoration: underline;
-    color: var(--color03);
+    color: var(--titlecolor);
 }
 
 main section {
@@ -98,7 +88,7 @@ main section {
 }
 
 main section > h1 {
-    color: var(--color03);
+    color: var(--titlecolor);
     font-family: 'caprasimo', sans-serif;
     font-weight: normal;
     text-align: center;
@@ -125,7 +115,7 @@ main section.parte-2 {
 
 main section.parte-2 > p {
     font-weight: bold;
-    color: #252525;
+    color: #000000b4;
     padding-bottom: 50px;
 }
 
@@ -142,48 +132,13 @@ main section.parte-2 > a {
     text-decoration: none;
     font-weight: 600;
     color: black;
-    background-color: var(--color01);
+    background-color: var(--headercolor);
     border-radius: 6px;
     padding: 10px 20px;
 }
 
 main section.parte-2 > a:hover {
     transition: 0.5s;
-    background-color: var(--color03);
+    background-color: var(--titlecolor);
     color: white;
-}
-
-@media (max-width: 768px) {
-  header {
-    padding: 15px 20px;
-    flex-direction: column;
-  }
-
-  .titulo-completo {
-    display: none;
-  }
-
-  .reg {
-    display: none;
-  }
-
-  .abreviado {
-    display: inline;
-  }
-
-  #abr {
-    display: inline;
-  }
-
-  nav {
-    margin-top: 10px;
-  }
-  main section > h1 {
-    font-size: 11vw;
-  }
-
-  main section.parte-2 {
-    font-size: 5vw;
-    padding: 40px 10px;
-  }
 }
