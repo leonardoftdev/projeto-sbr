@@ -4,17 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sabor Irresistível</title>
-    <link rel="stylesheet" href="estilos/desktopp.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="estilos/desktop.css">
     <link rel="stylesheet" href="estilos/phone.css">
     <meta name="description" content="Sabor Irresistível - Doces e sobremesas caseiras feitas com amor.">
 
 </head>
 <body>
     <header>
-
+        <span id="menu" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
         <div  class="header-content">
             <h1 id="titulo-header">
-                <a href="#" class="titulo-completo">Sabor Irresistível</a><span class="reg">&reg;</span>
+                <a href="#" class="titulo-menor">Sbi</a><span class="reg" id="regmenor">&reg;</span>
+                <a href="#" class="titulo-completo">Sabor Irresistível</a><span class="reg" id="regcompleto">&reg;</span>
             </h1>
         
             <nav id="nav">
@@ -23,14 +25,20 @@
                 <a href="#">CONTATO</a>
             </nav>
         </div>
-
     </header>
     
     <main>
         <section class="parte-1">
+
+        <ul id="menuNav">
+            <li><a href="#">GALERIA</a></li>
+            <li><a href="#">SOBRE MIM</a></li>
+            <li><a href="#">CONTATO</a></li>
+        </ul>
+
             <h1>Sabor Irresistível<span class="reg">&reg;</span></h1>
             <div class="img">
-                <img src="" alt="">
+                
             </div>
         </section>
         <section class="parte-2">
@@ -46,5 +54,15 @@
     <footer class="site-footer">
         <p>&copy; 2025 Sabor Irresistível. Todos os direitos reservados.</p>
     </footer>
+
+    <script>
+        function clickMenu () {
+            if (menuNav.style.display == 'block') {
+                menuNav.style.display = 'none'
+            } else {
+                menuNav.style.display = 'block'
+            }
+        }
+    </script>
 </body>
 </html>
