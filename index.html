@@ -57,11 +57,8 @@
 
     <script>
         function clickMenu () {
-            if (menuNav.style.display == 'block') {
-                menuNav.style.display = 'none'
-            } else {
-                menuNav.style.display = 'block'
-            }
+            const menuNav = document.getElementById('menuNav');
+            menuNav.classList.toggle('ativo');
         }
     </script>
 </body>

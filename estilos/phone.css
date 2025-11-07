@@ -28,18 +28,27 @@
         cursor: pointer;
     }
 
+    #menuNav {
+        display: block;
+        max-height: 0px;
+        overflow: hidden;
+        transition: max-height 0.4s ease;
+    }
+
+    #menuNav.ativo {
+        max-height: 300px;
+    }
+
     main section ul {
-        display: none;
         background-color: var(--headercolor);
         width: 100vw;
-        padding: 10px;
         margin: 0;
         box-shadow: 0 2px 10px #000000b7;
     }
 
     main section ul li {
         list-style-type: none;
-        padding-bottom: 10px;
+        padding: 20px;
     }
 
     main section ul li a {

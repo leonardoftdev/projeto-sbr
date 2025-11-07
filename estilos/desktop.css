@@ -24,7 +24,7 @@
     }
     
     body {
-        background-color: var(--bgcolor);
+        background: linear-gradient( #f08080 60%, #fdb8b8);
         font-family: 'outfit', sans-serif;
         position: relative;
     }
