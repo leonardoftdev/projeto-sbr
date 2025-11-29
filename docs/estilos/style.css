@@ -1,0 +1,202 @@
+@charset "UTF-8";
+
+    :root {
+        --bgcolor: #f08080;
+        --headercolor: #fdb8b8;
+        --titlecolor: #009494;
+    }
+
+    @font-face {
+        font-family: 'caprasimo';
+        src: url(../fonts/Caprasimo/Caprasimo-Regular.ttf) format('truetype');
+    }
+
+    @font-face {
+        font-family: 'outfit';
+        src: url(../fonts/Outfit/Outfit-VariableFont_wght.ttf) format('truetype');
+        font-display: swap;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background: linear-gradient(to bottom, var(--bgcolor) 60%, var(--headercolor));
+        font-family: "outfit", 'Times New Roman', Times, serif;
+    }
+
+    header {
+        z-index: 3;
+        top: 0;
+        position: sticky;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 40px;
+        height: 100px;
+        min-width: 300px;
+        background-color: var(--headercolor);
+        box-shadow: 1px 4px 10px #00000071;
+    }
+
+    .topo {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .menuNav {
+        z-index: 1;
+
+        
+        transform: translateY(-163%);
+        transition: transform 0.3s ease;
+
+        padding: 20px 40px;
+        background-color: var(--headercolor);
+        width: 100vw;
+        box-shadow: -2px 6px 6px 0px #00000071;
+    }
+
+    .menuNav.ativo {
+        transform: translateY(0);
+    }
+
+    #btnMenu {
+        align-self: center;
+        cursor: pointer;
+        font-weight: 500;
+        font-size: 2em;
+    }
+
+    #logo-mobile {
+        font-family: 'caprasimo','Times New Roman', Times, serif;
+        font-weight: lighter;
+        color: var(--titlecolor);
+        text-shadow: 1px 1px 1px black;
+        font-size: 2.5em;
+    }
+
+    #logo-mobile a {
+        text-decoration: none;
+        color: var(--titlecolor);
+    }
+
+    .reg {
+        font-size: 0.8em;
+        vertical-align: super;
+    }
+
+    header ul li {
+        z-index: -1;
+        list-style-type: none;
+        line-height: 1.6;
+    }
+
+    header ul li a {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+    }
+
+    header ul li a:hover {
+        text-decoration: underline;
+        color: var(--titlecolor);
+    }
+
+    .section-1 {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+
+    .section-1 h1 {
+        font-family: 'caprasimo', 'Times New Roman', Times, serif;
+        font-weight: lighter;
+        font-size: 3em;
+        text-align: center;
+        color: var(--titlecolor);
+        text-shadow: 1px 1px 1px black;
+        padding: 20px;
+        max-width: 350px;
+    }
+
+    .section-1 img {
+        border-radius: 50%;
+        border: 3px solid var(--headercolor);
+        margin-bottom: 50px;
+        height: 300px;
+        width: 300px;
+    }
+
+    .section-2 {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+
+    .section-2 h2 {
+        color: #000000b0;
+        padding-bottom: 30px;
+        font-size: 1.3em;
+    }
+
+    .section-2 p {
+        font-size: 1.5em;
+        font-weight: bold;
+        line-height: 1.6;
+        text-align: center;
+        padding-bottom: 30px;
+    }
+
+    .section-2 .marca {
+        font-family: 'caprasimo', 'outfit', 'Times New Roman', Times, serif;
+        font-weight: lighter;
+    }
+
+    .section-2 .btn {
+        text-decoration: none;
+        color: black;
+        background-color: var(--headercolor);
+        padding: 10px;
+        border-radius: 5px;
+        margin-bottom: 30px;
+        font-weight: bold;
+    }
+
+    .section-2 .btn:hover {
+        background-color: var(--titlecolor);
+        color: white;
+        transition: 0.8s;
+    }
+
+    .section-2 .scroll-pictures {
+        display: flex;
+        overflow-x: auto;
+        gap: 10px;
+        -webkit-overlow-scrolling: touch;
+        max-width: 330px;
+        padding: 50px;
+    }
+
+    .section-2 .scroll-pictures::-webkit-scrollbar {
+        display: none;
+    }
+
+    .section-2 .scroll-pictures img {
+        width: 200px;
+        height: 200px;
+        border-radius: 20px;
+        flex: 0 0 auto;
+        object-fit: cover;
+        scroll-snap-align: center;
+    }
+
+    footer {
+        text-align: center;
+        font-size: 0.8em;
+    }
