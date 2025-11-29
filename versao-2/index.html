@@ -10,19 +10,22 @@
 <body>
     <header>
 
-        <span id="menu" class="material-symbols-outlined" onclick="clickMenu()">
-            menu
-        </span>
+        <div class="topo">
+            <span id="btnMenu" class="material-symbols-outlined">
+                menu
+            </span>
+            <h1 id="logo-mobile">
+                <a href="#">Sbi</a><span class="reg">&reg;</span>
+            </h1>
+        </div>
 
-        <h1 id="logo-mobile">
-            <a href="#">Sbi</a><span class="reg">&reg;</span>
-        </h1>
-
-        <ul>
-            <li><a href="#">GALERIA</a></li>
-            <li><a href="#">SOBRE MIM</a></li>
-            <li><a href="#">CONTATO</a></li>
-        </ul>
+        <div id="menuNav" class="menuNav">
+            <ul>
+                <li><a href="#">GALERIA</a></li>
+                <li><a href="#">SOBRE MIM</a></li>
+                <li><a href="#">CONTATO</a></li>
+            </ul>
+        </div>
 
     </header>
     <main>
@@ -50,7 +53,17 @@
         </section>
     </main>
     <footer>
-        
+        &copy; 2025 Sabor Irresistível. Todos os direitos reservados.
     </footer>
+    <script>
+        const btnMenu = document.getElementById('btnMenu');
+        const menuNav = document.getElementById('menuNav');
+
+        if (btnMenu && menuNav) {
+            btnMenu.addEventListener('click', () => {
+                menuNav.classList.toggle('ativo');
+            });
+        }
+    </script>
 </body>
 </html>
