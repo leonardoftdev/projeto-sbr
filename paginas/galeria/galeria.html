@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabor Irresistível 2</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="galeria.css">
+</head>
+<body>
+    <header>
+
+        <div class="topo">
+            <span id="btnMenu" class="material-symbols-outlined">
+                menu
+            </span>
+            <h1 id="logo-mobile">
+                <a href="../../index.html">Sbi</a><span class="reg">&reg;</span>
+            </h1>
+        </div>
+
+        <div id="menuNav" class="menuNav">
+            <ul>
+                <li><a href="galeria.html">GALERIA</a></li>
+                <li><a href="../sobremim/sobremim.html">SOBRE MIM</a></li>
+                <li><a href="../contato/contato.html">CONTATO</a></li>
+            </ul>
+        </div>
+
+    </header>
+
+    <main>
+        <h1>Testando</h1>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis quibusdam, fuga qui ipsam sint deleniti veritatis esse, nemo vero, sunt distinctio! Consectetur vero voluptates fugiat praesentium, corporis saepe harum modi! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos natus voluptate quibusdam veniam perferendis aliquam, nostrum perspiciatis, dolor accusamus voluptas ullam placeat doloremque inventore quos dolorum aliquid totam recusandae vitae. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores qui ipsa mollitia laudantium aspernatur nobis ducimus deleniti, nesciunt consequatur odio excepturi facilis repellat dolor! Numquam aperiam quam odio eligendi quae. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit sint nihil veritatis ipsam exercitationem, iusto, similique dolorum ab aliquid neque facilis corporis asperiores officiis, commodi labore doloremque. Repellat, eveniet odio!
+        </p>
+    </main>
+    
+    <footer>
+        &copy; 2025 Sabor Irresistível. Todos os direitos reservados.
+    </footer>
+    <script>
+        const btnMenu = document.getElementById('btnMenu');
+        const menuNav = document.getElementById('menuNav');
+
+        if (btnMenu && menuNav) {
+            btnMenu.addEventListener('click', () => {
+                menuNav.classList.toggle('ativo');
+            });
+        }
+    </script>
+</body>
+</html>

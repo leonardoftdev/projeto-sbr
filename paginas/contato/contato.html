@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabor Irresistível 2</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="contato.css">
+</head>
+<body>
+    <header>
+
+        <div class="topo">
+            <span id="btnMenu" class="material-symbols-outlined">
+                menu
+            </span>
+            <h1 id="logo-mobile">
+                <a href="../../index.html">Sbi</a><span class="reg">&reg;</span>
+            </h1>
+        </div>
+
+        <div id="menuNav" class="menuNav">
+            <ul>
+                <li><a href="../galeria/galeria.html">GALERIA</a></li>
+                <li><a href="../sobremim/sobremim.html">SOBRE MIM</a></li>
+                <li><a href="contato.html">CONTATO</a></li>
+            </ul>
+        </div>
+
+    </header>
+
+    <main>
+        <h1>Testando</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero eveniet, repudiandae minus repellendus beatae sunt quae quas praesentium recusandae dolores aliquid reprehenderit! Soluta sint alias rerum laudantium consequatur, quae quia! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab esse error, eligendi, deleniti dolor dolore modi corporis quod praesentium sunt excepturi perspiciatis optio numquam aliquid quis recusandae, veniam facilis magnam.
+        </p>
+    </main>
+    
+    <footer>
+        &copy; 2025 Sabor Irresistível. Todos os direitos reservados.
+    </footer>
+    <script>
+        const btnMenu = document.getElementById('btnMenu');
+        const menuNav = document.getElementById('menuNav');
+
+        if (btnMenu && menuNav) {
+            btnMenu.addEventListener('click', () => {
+                menuNav.classList.toggle('ativo');
+            });
+        }
+    </script>
+</body>
+</html>

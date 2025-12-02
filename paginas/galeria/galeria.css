@@ -1,0 +1,117 @@
+@charset "UTF-8";
+
+    :root {
+        --bgcolor: #f08080;
+        --headercolor: #fdb8b8;
+        --titlecolor: #009494;
+    }
+
+    @font-face {
+        font-family: 'caprasimo';
+        src: url(../../fonts/Caprasimo/Caprasimo-Regular.ttf) format('truetype');
+    }
+
+    @font-face {
+        font-family: 'outfit';
+        src: url(../../fonts/Outfit/Outfit-VariableFont_wght.ttf) format('truetype');
+        font-display: swap;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background: linear-gradient(to bottom, var(--bgcolor) 60%, var(--headercolor));
+        background-repeat: no-repeat;
+        font-family: "outfit", 'Times New Roman', Times, serif;
+    }
+
+    header {
+        z-index: 3;
+        top: 0;
+        position: sticky;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 40px;
+        height: 100px;
+        min-width: 300px;
+        background-color: var(--headercolor);
+        box-shadow: 1px 4px 10px #00000071;
+    }
+
+    .topo {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .menuNav {
+        z-index: 1;
+
+        
+        transform: translateY(-200%);
+        transition: transform 0.3s ease;
+
+        padding: 20px 40px;
+        background-color: var(--headercolor);
+        width: 100vw;
+        box-shadow: -2px 6px 6px 0px #00000071;
+    }
+
+    .menuNav.ativo {
+        transform: translateY(0);
+    }
+
+    #btnMenu {
+        align-self: center;
+        cursor: pointer;
+        font-weight: 500;
+        font-size: 2em;
+    }
+
+    #logo-mobile {
+        font-family: 'caprasimo','Times New Roman', Times, serif;
+        font-weight: lighter;
+        color: var(--titlecolor);
+        text-shadow: 1px 1px 1px black;
+        font-size: 2.5em;
+    }
+
+    #logo-mobile a {
+        text-decoration: none;
+        color: var(--titlecolor);
+    }
+
+    .reg {
+        font-size: 0.8em;
+        vertical-align: super;
+    }
+
+    header ul li {
+        z-index: -1;
+        list-style-type: none;
+        line-height: 1.6;
+    }
+
+    header ul li a {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+    }
+
+    header ul li a:hover {
+        text-decoration: underline;
+        color: var(--titlecolor);
+    }
+
+    
+
+    footer {
+        text-align: center;
+        font-size: 0.8em;
+    }
