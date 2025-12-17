@@ -23,6 +23,10 @@
         box-sizing: border-box;
     }
 
+    html, body {
+        overflow-x: hidden;
+    }
+
     body {
         background: linear-gradient(to bottom, var(--bgcolor) 60%, var(--headercolor));
         font-family: "outfit", 'Times New Roman', Times, serif;
@@ -39,12 +43,14 @@
         padding: 20px 40px;
         height: 100px;
         min-width: 300px;
+        width: 100vw;
         background-color: var(--headercolor);
         box-shadow: 1px 4px 10px #00000071;
     }
 
     .topo {
         display: flex;
+        z-index: 2;
         justify-content: space-between;
         width: 100%;
     }
@@ -63,7 +69,12 @@
     }
 
     .menuNav.ativo {
+        z-index: 1;
         transform: translateY(0);
+    }
+
+    #menuNav-pc {
+        display: none;
     }
 
     #btnMenu {
@@ -73,11 +84,15 @@
         font-size: 2em;
     }
 
-    #logo-mobile {
+    .logo {
         font-family: 'caprasimo','Times New Roman', Times, serif;
         font-weight: lighter;
         color: var(--titlecolor);
         text-shadow: 1px 1px 1px black;
+        font-size: 1.3em;
+    }
+
+    #logo-mobile {
         font-size: 2.5em;
     }
 
@@ -86,13 +101,21 @@
         color: var(--titlecolor);
     }
 
+    #logo-pc {
+        display: none;
+    }
+
+    #logo-pc a {
+        text-decoration: none;
+    }
+
     .reg {
         font-size: 0.8em;
         vertical-align: super;
     }
 
     header ul li {
-        z-index: -1;
+        z-index: 0;
         list-style-type: none;
         line-height: 1.6;
     }
@@ -200,3 +223,42 @@
         text-align: center;
         font-size: 0.8em;
     }
+
+    @media screen and (min-width: 840px) {
+
+        .topo #btnMenu {
+            display: none;
+        }
+
+        .topo #logo-mobile {
+            display: none;
+        }
+
+        .topo #logo-pc {
+            display: block;
+        }
+
+        .topo #menuNav-pc {
+            display: flex;
+        }
+        
+        .topo #menuNav-pc ul {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+       .section-1 {
+            width: 100vw;
+       }
+
+       .section-1 h1 {
+            font-size: 7em;
+            max-width: 90vw;
+            min-width: none;
+       }
+}
