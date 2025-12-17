@@ -206,9 +206,6 @@
         padding: 50px;
     }
 
-    .section-2 .scroll-pictures::-webkit-scrollbar {
-        display: none;
-    }
 
     .section-2 .scroll-pictures img {
         width: 200px;
@@ -261,4 +258,32 @@
             max-width: 90vw;
             min-width: none;
        }
+
+       .section-1 img {
+            border-radius: 8px;
+            width: 40vw;
+            height: 40vw;
+       }
+
+       .section-2 h2 {
+            font-size: 2em;
+       }
+
+       .section-2 p {
+            font-size: 2em;
+       }
+
+        .section-2 .scroll-pictures::-webkit-scrollbar {
+            
+        }
+
+        .section-2 .scroll-pictures {
+            padding: 10;
+            min-width: 600px;
+        }
+
+        .section-2 .scroll-pictures img {
+            min-width: 400px;
+            min-height: 400px;
+        }
 }
