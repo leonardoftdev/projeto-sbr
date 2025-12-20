@@ -273,12 +273,7 @@
             font-size: 2em;
        }
 
-        .section-2 .scroll-pictures::-webkit-scrollbar {
-            
-        }
-
         .section-2 .scroll-pictures {
-            padding: 10;
             min-width: 600px;
         }
 
