@@ -78,18 +78,34 @@
                 </div>
             </div>
         </section>
-            <div id="boloInterior" class="interior-bolo">
-                <img src="" alt="">
-                <i class="fa-solid fa-arrow-right"></i>
-            </div>
+            
         <section id="section-2">
 
+            <h2>Ta... mas como é por dentro ?</h2>
+
+            <div id="boloInterior" class="interior-bolo img">
+                <img src="../../imagens/bolo-interior.jpeg" alt="Foto do Interior do Bolo">
+            </div>
+
+            <div id="bolo" class="foto-bolo">
+                <img src="../../imagens/foto-bolo.jpeg" alt="Foto do Bolo Inteiro">
+            </div>
+
+            <button id="btn"><i class="fa-solid fa-arrow-right"></i></button>
+
+        </section>
+
+        <section id="section-3">
+            <h1>Se interessou ?</h1>
+            <p>Descubra como posso adicionar um toque de <i class="fa-solid fa-heart"></i> ao seu proximo Evento</p>
+            <a href="../sobremim/sobremim.html" class="btn-sobremim">
+                ➜ Sobre mim
+            </a>
+
+            <p id="footer">&copy; 2025 Sabor Irresistível. Todos os direitos reservados.</p>
         </section>
     </main>
     
-    <footer>
-        &copy; 2025 Sabor Irresistível. Todos os direitos reservados.
-    </footer>
     <script>
         const btnMenu = document.getElementById('btnMenu');
         const menuNav = document.getElementById('menuNav');
@@ -98,6 +114,16 @@
             btnMenu.addEventListener('click', () => {
                 menuNav.classList.toggle('ativo');
             });
+        }
+
+        const btn = document.getElementById('btn');
+        const img = document.querySelector('.img');
+
+        if (btn && img) {
+            btn.addEventListener('click', () => {
+                img.classList.toggle('ativo');
+            });
+
         }
     </script>
 </body>
