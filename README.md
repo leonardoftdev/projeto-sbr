@@ -17,4 +17,6 @@ Este é apenas um projeto pessoal, com intuito de praticar e aprender mais o des
 
 🔗 [Clique aqui para visitar o projeto hospedado no GitHub Pages](https://leonardoftdev.github.io/projeto-sbr/)
 
+(ATUALMENTE ESTÁ SOMENTE VERSÃO PARA MOBILE)
+
 —
