@@ -91,7 +91,9 @@
                 <img src="../../imagens/foto-bolo.jpeg" alt="Foto do Bolo Inteiro">
             </div>
 
-            <button id="btn"><i class="fa-solid fa-arrow-right fa-fade"></i></button>
+            <button id="btn" class="btn-arrow"><i class="fa-solid fa-arrow-right fa-fade"></i></button>
+            <button id="btnLeft" class="btn-arrow hidden"><i class="fa-solid fa-arrow-left fa-fade"></i></button>
+
 
         </section>
 
@@ -117,14 +119,27 @@
         }
 
         const btn = document.getElementById('btn');
+        const btnLeft = document.getElementById('btnLeft');
         const img = document.querySelector('.img');
 
-        if (btn && img) {
-            btn.addEventListener('click', () => {
-                img.classList.toggle('ativo');
-            });
+        function toggleItens() {
+            img.classList.toggle('ativo');
 
+            if (img.classList.contains ('ativo')) {
+                btn.classList.add('hidden');
+                btnLeft.classList.remove('hidden');
+            } else {
+                btn.classList.remove('hidden');
+                btnLeft.classList.add('hidden');
+            }
         }
+
+        if (btn && btnLeft && img) {
+            btn.addEventListener('click', toggleItens);
+            btnLeft.addEventListener('click', toggleItens);
+        }
+
+
     </script>
 </body>
 </html>
