@@ -129,9 +129,9 @@
     section {
         display: flex;
         flex-flow: column nowrap;
-        align-items: center;
-        justify-items: center;
+        align-content: center;
         height: 100vh;
+        padding-top: 50px;
     }
 
     section div h1 {
@@ -147,18 +147,17 @@
         text-shadow: 1px 1px 1px black;
     }
 
-    section .img-back {
+    /* section .img-back {
         background: url(../../imagens/foto-bolo.jpeg);
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
         background-attachment: fixed;
         justify-self: center;
-        border-radius: 15px;
         height: 300px;
-        width: 90%;
+        width: 100vw;
         margin-bottom: 10px;
-    }
+    } */
 
     section div h2 {
         padding: 0px 20px;
