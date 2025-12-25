@@ -23,6 +23,7 @@
         box-sizing: border-box;
     }
 
+
     body {
         background: linear-gradient(to bottom, var(--bgcolor) 60%, var(--headercolor));
         background-repeat: no-repeat;
@@ -123,6 +124,68 @@
     header ul li a:hover {
         text-decoration: underline;
         color: var(--titlecolor);
+    }
+
+    section {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-items: center;
+        height: 100vh;
+    }
+
+    section div h1 {
+        font-weight: 700;
+        padding: 20px;
+    }
+
+    section div h1 .marca {
+        font-size: 1.5em;
+        font-weight: 100;
+        font-family: 'caprasimo', sans-serif;
+        color: var(--titlecolor);
+        text-shadow: 1px 1px 1px black;
+    }
+
+    section .img-back {
+        background: url(../../imagens/foto-bolo.jpeg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        justify-self: center;
+        border-radius: 15px;
+        height: 300px;
+        width: 90%;
+        margin-bottom: 10px;
+    }
+
+    section div h2 {
+        padding: 0px 20px;
+    }
+
+    section div .instagram-logo {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+    }
+
+    section div i {
+        padding: 10px;
+        font-size: 3em;
+        align-self: center;
+        justify-self: center;
+        text-align: center;
+        margin: auto;
+    }
+
+    section div a {
+        text-decoration: none;
+        color: black;
+    }
+
+    section div p {
+        padding: 20px;
     }
 
 
