@@ -221,4 +221,29 @@
             list-style: none;
         }
 
+        body {
+            height: 100vh;
+        }
+
+        section {
+            background-color: var(--headercolor);
+            width: 90vw;
+            height: 80vh;
+            margin: auto;
+            border-radius: 0px 0px 20px 20px;
+            box-shadow: 0px 0px 20px 0px #00000023;
+            align-content: center;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            align-items: flex-start;
+        }
+
+        footer {
+            padding: 10px;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translate(-50%);
+        }
+
     }
